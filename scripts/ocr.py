@@ -3,6 +3,9 @@ import sys
 import os.path as osp
 import argparse
 
+# # Set OpenMP environment variable to avoid runtime conflicts
+# os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
+
 sys.path.append(osp.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 from pdf_extract_kit.utils.config_loader import load_config, initialize_tasks_and_models
 import pdf_extract_kit.tasks
