@@ -1,5 +1,5 @@
-inputs: assets/demo/formula_detection
-outputs: outputs/pdf2markdown
+inputs: assets/demo/PDFs/Lecture_note1.pdf
+outputs: outputs/pdf2markdown/Lecture_note1
 visualize: True
 merge2markdown: True
 tasks:
@@ -32,5 +32,3 @@ tasks:
       det_model_dir: models/OCR/PaddleOCR/det/ch_PP-OCRv4_det
       rec_model_dir: models/OCR/PaddleOCR/rec/ch_PP-OCRv4_rec
       det_db_box_thresh: 0.3
-
-  
